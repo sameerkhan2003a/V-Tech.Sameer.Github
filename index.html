@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* Basic styling for text */
+    .text-gold {
+      color: gold !important;
+    }
+
+    /* Adding shadow to the navbar */
+    .navbar-shadow {
+      box-shadow: 0 14px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Inverting navbar toggle icon color */
+    .navbar-dark .navbar-toggler-icon {
+      filter: invert(1);
+    }
+
+    /* Styling for the navbar brand text */
+    .navbar-brand h5 {
+      margin: 0;
+      color: gold !important;
+    }
+
+    /* Styling for custom containers */
+    .custom-container {
+      border: 10px solid gold;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Dropdown item styling */
+    .dropdown-item {
+      color: gold !important;
+    }
+
+    /* Styling for carousel captions */
+    .carousel-caption {
+      color: gold;
+    }
+
+    /* Styling for important news to make it blink */
+    .important-news {
+      color: red;
+      font-weight: bold;
+      animation: blink 1s step-start infinite;
+    }
+
+    /* Blink animation keyframes */
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    /* Marquee styling */
+    .marquee {
+      overflow: hidden;
+      position: relative;
+      height: 400px;
+    }
+
+    /* Resetting margin for marquee content */
+    .marquee h2, .marquee p {
+      margin: 0;
+    }
+
+    /* Marquee content animation */
+    .marquee-content {
+      display: block;
+      position: absolute;
+      width: 100%;
+      animation: scroll 15s linear infinite;
+    }
+
+    /* Scroll animation keyframes */
+    @keyframes scroll {
+      0% {
+        top: 100%;
+      }
+      100% {
+        top: -100%;
+      }
+    }
+  </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap JS with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V Tech Solutions</title>
+</head>
+<body>
+  <!-- Navbar section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand text-gold" style="font-size:25px;" href="#">
+        V TECH SOLUTIONS
+        <h5 style="margin-left:125px;">Tumakuru</h5>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-gold" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-gold" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-gold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PG COURSES
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-gold" href="#">MCA</a></li>
+              <li><a class="dropdown-item text-gold" href="#">MBA</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-gold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              TRENDING COURSES
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-gold" href="#">BASICS</a></li>
+              <li><a class="dropdown-item text-gold" href="#">C PROGRAMMING</a></li>
+              <li><a class="dropdown-item text-gold" href="#">C++ PROGRAMMING</a></li>
+              <li><a class="dropdown-item text-gold" href="#">JAVA PROGRAMMING</a></li>
+              <li><a class="dropdown-item text-gold" href="#">DATA STRUCTURES</a></li>
+              <li><a class="dropdown-item text-gold" href="#">RDBMS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-gold" href="#">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-gold" href="#">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content container -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left column with carousel -->
+      <div class="col-lg-7">
+        <div class="custom-container" style="height: 475px; background-color: black;">
+          <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner my-3">
+              <!-- Carousel items with images -->
+              <div class="carousel-item active">
+                <img src="https://quotefancy.com/media/wallpaper/3840x2160/50568-Daniel-J-Boorstin-Quote-Education-is-learning-what-you-didn-t-even.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://quotefancy.com/media/wallpaper/3840x2160/10317-Leonardo-da-Vinci-Quote-Learning-never-exhausts-the-mind.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://quotefancy.com/media/wallpaper/3840x2160/33453-Marian-Wright-Edelman-Quote-Education-is-for-improving-the-lives.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://quotefancy.com/media/wallpaper/3840x2160/353629-Joseph-Joubert-Quote-To-teach-is-to-learn-twice.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://quotefancy.com/media/wallpaper/3840x2160/8150719-Charlie-Munger-Quote-Those-who-keep-learning-will-keep-rising-in-life.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Right column with news marquee -->
+      <div class="col-lg-5">
+        <div class="custom-container" style="height: 475px; background-color: black;color:gold;">
+          <center><h4>RECENT NEWS</h4></center>
+          <div class="marquee">
+            <div class="marquee-content">
+              <h5>News</h5>
+
+              <h5>New Java Programming Course Launched</h5>
+              <p>We are excited to announce the launch of our new Java Programming course. Enroll now to enhance your skills!</p>
+
+              <h5 class="important-news">V Tech Solutions Wins Best Learning Center Award</h5>
+              <p class="important-news">We are proud to share that V Tech Solutions has been awarded the Best Learning Center Award for 2024!</p>
+
+              <h5>Upcoming Data Structures Workshop</h5>
+              <p>Join us for an in-depth workshop on Data Structures. Limited seats available, so register early!</p>
+
+              <h5 class="important-news">Important: New Batch for MCA Starting Soon</h5>
+              <p class="important-news">The new batch for the MCA course is starting soon. Don't miss the opportunity to enroll and advance your career.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
